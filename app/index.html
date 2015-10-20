@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="dashboardApp">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="DashboardCtrl">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="times">
+          <li ng-repeat="time in ratpTimes">
+            <span>{{time.type}} - {{time.line}} - {{time.stop}} - {{time.direction}}</span>
+            <p>{{time.name}} {{time.times}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
