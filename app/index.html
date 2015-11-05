@@ -12,10 +12,29 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <ul class="times">
-          <li ng-repeat="time in ratpTimes">
+        <h2>Bus</h2>
+        <ul class="ratp">
+          <li ng-repeat="time in busTimes">
             <span>{{time.type}} - {{time.line}} - {{time.stop}} - {{time.direction}}</span>
-            <p>{{time.name}} {{time.times}}</p>
+            <p>{{time.times}}</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-12">
+        <h2>Tram</h2>
+        <ul class="ratp">
+          <li ng-repeat="time in tramTimes">
+            <span>{{time.type}} - {{time.line}} - {{time.stop}} - {{time.direction}}</span>
+            <p>{{time.times}}</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-12">
+        <h2>Transilien</h2>
+        <ul class="sncf">
+          <li ng-repeat="time in sncfTimes">
+            <span>{{time.num}} - {{time.miss}} - {{time.term}}</span>
+            <p>{{time.date}}</p>
           </li>
         </ul>
       </div>
