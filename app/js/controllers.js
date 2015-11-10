@@ -11,15 +11,15 @@ dashboardApp.controller('DashboardCtrl', ['$scope', '$http', '$interval', functi
     };
 
     $scope.getData = function() {
-        $http.get('http://dashboard.local/index.php/ratp/bus').success(function(data) {
+        $http.get('http://dashboard.local/ratp/bus').success(function(data) {
             $scope.busTimes = data;
         });
 
-        $http.get('http://dashboard.local/index.php/ratp/tram').success(function(data) {
+        $http.get('http://dashboard.local/ratp/tram').success(function(data) {
             $scope.tramTimes = data;
         });
 
-        $http.get('http://dashboard.local/index.php/sncf').success(function(data) {
+        $http.get('http://dashboard.local/sncf').success(function(data) {
             $scope.sncfTimes = data;
         })
     };
