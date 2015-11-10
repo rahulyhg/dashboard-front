@@ -1,6 +1,8 @@
 /* app css stylesheet */
 
 body {
-  padding-top: 20px;
+  padding: 0;
+  color: #fff;
+  background-color: #333;
 }
 
