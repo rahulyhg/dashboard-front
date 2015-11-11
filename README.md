@@ -11,6 +11,7 @@ AngularJS App displaying dashboard informations (transport, weather)
 
 - Get [Node.js][node-download].
 - Install the tool dependencies (`npm install`).
+- Install frontend dependencies (`bower install`).
 - Start the server locally (`npm start`).
 - Navigate to [localhost][local-url]
 
